@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex - Detail</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstraap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/pokedex.css">
+</head>
+
+<body>
+    <section class="info">
+        <div class="card grass" style="width: 30rem;">
+          <a href="./index.html" class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg>
+          </a>
+          <h1 class="name">Bulbasaur</h1>
+          <div class="detail">
+            <ol class="types">
+              <li class="type grass">Grass</li>
+              <li class="type grass">Poison</li>
+            </ol>
+            <span class="number">#001</span>
+          </div>
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+            class="card-img-top" alt="bulbasaur">
+          <div class="card-body tab">
+            <ul class="nav nav-tabs" id="pokeInfoTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane"
+                  type="button" role="tab" aria-controls="about-tab-pane" aria-selected="true">About</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="stats-tab" data-bs-toggle="tab" data-bs-target="#stats-tab-pane" type="button"
+                  role="tab" aria-controls="stats-tab-pane" aria-selected="false">Base Stats</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="evolution-tab" data-bs-toggle="tab" data-bs-target="#evolution-tab-pane" type="button"
+                  role="tab" aria-controls="evolution-tab-pane" aria-selected="false" disabled>Evolution</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="moves-tab" data-bs-toggle="tab" data-bs-target="#moves-tab-pane" type="button" role="tab"
+                    aria-controls="moves-tab-pane" aria-selected="false" disabled>Moves</button>
+                </li>
+                </ul>
+                <div class="tab-content" id="pokeInfoTabContent">
+                  <div class="tab-pane fade show active" id="about-tab-pane" role="tabpanel" aria-labelledby="about-tab" tabindex="1">
+                    <table class="table table-xs">
+                      <tbody>
+                        <tr>
+                          <th scope="row">Experience</th>
+                          <td>64</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Height</th>
+                          <td>0.7 cm</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Weight</th>
+                          <td>6.9 kg</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Abilities</th>
+                          <td>Overgrow, Chlorophyll</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="tab-pane fade" id="stats-tab-pane" role="tabpanel" aria-labelledby="stats-tab" tabindex="2">
+                    <table class="table table-xs">
+                      <tbody>
+                        <tr>
+                          <th scope="row">HP</th>
+                          <td>45</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Attack</th>
+                          <td>49</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Defense</th>
+                          <td>49</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Special Attack</th>
+                          <td>65</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Special Defense</th>
+                          <td>65</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Speed</th>
+                          <td>45</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="tab-pane fade" id="evolution-tab-pane" role="tabpanel" aria-labelledby="evolution-tab" tabindex="3"></div>
+                  <div class="tab-pane fade" id="moves-tab-pane" role="tabpanel" aria-labelledby="moves-tab" tabindex="4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

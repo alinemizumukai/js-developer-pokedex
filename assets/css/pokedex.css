@@ -86,6 +86,27 @@
     border-radius: 1rem;
 }
 
+.details {
+    text-decoration: none;
+}
+
+.info {
+    width: 100vw;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 1rem;
+}
+
+.info .card .arrow {
+    color: #fff;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
 .pokemon .number {
     color: #000;
     opacity: .3;
@@ -93,26 +114,41 @@
     font-size: .625rem;
 }
 
-.pokemon .name {
+.card .number {
+    margin: .5rem;
+    color: #fff;
+    text-align: right;
+    font-size: 1rem;
+}
+
+.pokemon .name, .card .name {
     text-transform: capitalize;
     color: #fff;
     margin-bottom: .25rem;
 }
 
-.pokemon .detail {
+.pokemon .detail, .card .detail {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.pokemon .detail .types {
+.card .detail {
+    align-items: start;
+}
+
+.pokemon .detail .types, .card .types {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.pokemon .detail .types .type {
+.card .types {
+    display: flex;    
+}
+
+.pokemon .detail .types .type, .card .types .type {
     color: #fff;
     padding: .25rem .5rem;
     margin: .25rem 0;
@@ -122,9 +158,29 @@
     text-align: center;
 }
 
-.pokemon .detail img {
+.card .types .type {
+    font-size: .9rem;
+}
+
+.pokemon .detail img  {
     max-width: 100%;
     height: 70px;
+}
+
+.card img  {
+    max-width: 100%;
+    height: 40vh;
+}
+
+.tab {
+    background-color: #fff;
+    margin: 1rem;
+    opacity: .9;
+    border-radius: 1rem;
+}
+
+#pokeInfoTabContent table {
+    margin-top: 1rem;
 }
 
 .pagination {
